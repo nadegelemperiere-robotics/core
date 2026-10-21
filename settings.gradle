@@ -1,4 +1,6 @@
 pluginManagement {
+    // Provides the com.bylazar.svelte-assets plugin used by the Panels plugins
+    includeBuild 'Panels/plugin-svelte-assets'
     repositories {
         google()
         mavenCentral()
@@ -8,3 +10,4 @@ pluginManagement {
 
 include ':FtcRobotController'
 include ':TeamCode'
+include ':Panels:AllianceNavlet'

@@ -32,6 +32,18 @@ If you are an Android Studio programmer, there are several ways to download this
 
 Once you have downloaded and uncompressed (if needed) your folder, you can use Android Studio to import the folder  ("Import project (Eclipse ADT, Gradle, etc.)").
 
+## Troubleshooting the build
+
+### `Could not resolve com.android.tools.build:aapt2:8.13.2-...`
+Android Studio sometimes fails to download the `aapt2` build tool, for instance when Gradle runs offline or its cache is incomplete. Run the build once from the command line, online, at the root of the project:
+
+```
+gradlew.bat assembleDebug      (Windows)
+./gradlew assembleDebug        (macOS, Linux)
+```
+
+Gradle downloads the missing artifact into its cache, and Android Studio builds normally afterwards. If the error persists, check that Android Studio is not in offline mode (Gradle tool window, "Toggle Offline Mode").
+
 ## Getting Help
 ### User Documentation and Tutorials
 *FIRST* maintains online documentation with information and tutorials on how to use the *FIRST* Tech Challenge software and robot control system.  You can access this documentation using the following link:

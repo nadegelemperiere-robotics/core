@@ -1,0 +1,8 @@
+{
+  "motors": {
+    "front-left":  { "type" : "single", "hwmap": "frontLeftWheel",  "inverted": false },
+    "front-right": { "type" : "single", "hwmap": "frontRightWheel", "inverted": false },
+    "back-left":   { "type" : "single", "hwmap": "backLeftWheel",   "inverted": true  },
+    "back-right":  { "type" : "single", "hwmap": "backRightWheel",  "inverted": true  }
+  }
+}

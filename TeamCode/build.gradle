@@ -22,8 +22,44 @@ android {
     packagingOptions {
         jniLibs.useLegacyPackaging true
     }
+
+    sourceSets {
+        main.java.srcDirs += file('src/androidTest/java')
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    maven { url = 'https://maven.brott.dev/' }
+    maven { url = 'https://mymaven.bylazar.com/releases' }
+    maven { url = "https://repo.dairy.foundation/releases" }
+    maven { url = "https://repo.dairy.foundation/snapshots" }
 }
 
 dependencies {
     implementation project(':FtcRobotController')
+
+    // Panels plugins
+    implementation project(':Panels:AllianceNavlet')
+
+    // Solvers Lib
+    implementation "org.solverslib:core:0.3.6"
+    implementation "org.solverslib:pedroPathing:0.3.6"
+    implementation "org.solverslib:photon:0.3.6"
+
+    // Pedro Pathing
+    implementation 'com.pedropathing:revhub:3.0.2'
+    implementation 'com.pedropathing:tuning:1.0.0'
+
+    // Panels Dashboard
+    implementation "com.bylazar:fullpanels:1.0.19"
+
+    // JSON
+    implementation "org.json:json:20250107"
+
+    // Test
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.14.2'
+
 }

@@ -1,0 +1,6 @@
+{
+  "driver-station" : true,
+  "dashboard"      : true,
+  "system"         : true,
+  "level"          : "verbose"
+}

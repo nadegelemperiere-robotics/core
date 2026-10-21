@@ -1,0 +1,28 @@
+{
+    "name":"BladesRunners",
+    "navlets":[
+        {"navletID":"Battery","pluginID":"com.bylazar.battery"},
+        {"navletID":"Ping","pluginID":"com.bylazar.pinger"},
+        {"pluginID":"com.bylazar.alliance","navletID":"Alliance"}
+    ],
+    "widgets":[
+        {"x":0,"y":0,"w":5,"h":6,"widgets":[
+            {"pluginID":"com.bylazar.opmodecontrol","widgetID":"OpModes Control"}
+        ]},
+        {"x":5,"y":0,"w":6,"h":12,"widgets":[
+            {"pluginID":"com.bylazar.configurables","widgetID":"Configurables"},
+            {"pluginID":"com.bylazar.configurables","widgetID":"ChangedConfigurables"}
+        ]},
+        {"x":0,"y":6,"w":5,"h":6,"widgets":[
+            {"pluginID":"com.bylazar.gamepad","widgetID":"First Gamepad"},
+            {"pluginID":"com.bylazar.gamepad","widgetID":"Second Gamepad"},
+            {"pluginID":"com.bylazar.capture","widgetID":"Capture"}
+        ]},
+        {"x":11,"y":0,"w":5,"h":9,"widgets":[
+            {"pluginID":"com.bylazar.field","widgetID":"Field"}
+        ]},
+        {"x":11,"y":9,"w":5,"h":3,"widgets":[
+            {"pluginID":"com.bylazar.telemetry","widgetID":"Telemetry"}
+        ]}
+    ]
+}

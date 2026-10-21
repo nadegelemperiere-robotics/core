@@ -1,0 +1,11 @@
+{
+  "subsystems": {
+    "drivetrain": {
+      "type":        "mecanum",
+      "front-left":  "front-left",
+      "front-right": "front-right",
+      "back-left":   "back-left",
+      "back-right":  "back-right"
+    }
+  }
+}
